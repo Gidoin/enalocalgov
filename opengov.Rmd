@@ -24,7 +24,7 @@ layout: true
 
 class: center, middle
 
-Find those slides online : https://gidoin.github.io/enalocalgov/
+Find those slides online : https://gidoin.github.io/enalocalgov/opengov.html
 
 Sources : https://github.com/Gidoin/enalocalgov/
 
