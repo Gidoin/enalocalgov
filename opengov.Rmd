@@ -1,0 +1,970 @@
+---
+title: "Innovation in local public sector"
+subtitle: "Seminar on Local Governance - L'Ena"
+author: "Timothée Gidoin, July 2019"
+date: ""
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+params:
+  event: Master journalisme - Université Cergy, jour 1
+---
+
+layout: true
+  
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='", system.file('rmarkdown', 'templates', 'xaringan', 'resources', 'img', 'accidents.png', package='SlidesDatactivist'), "' width='100px'></center></span></div>")` 
+
+---
+
+class: center, middle
+
+Find those slides online : https://gidoin.github.io/enalocalgov/
+
+Sources : https://github.com/Gidoin/enalocalgov/
+
+Datactivist productions are freely reusable under the terms of the licence  [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+<BR>
+<BR>
+
+.center[<img src="./img/ccbysa.png" height="100"/>] 
+---
+
+## Who are we ?
+
+<BR><BR><BR><BR>
+
+[![](https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png)](https://datactivist.coop)
+
+### We .red[open data], we make them .red[useful]
+
+
+---
+## Who are we ?
+
+- Datactivist is an .red[**open data pure player**] founded in 2016 by Samuel Goëta and Joël Gombin 
+
+- Consulting on .red[**open data strategies**] : we help public actors to design and implement their open data strategy 
+
+- .red[**Assistance on open data usages**] : we help public actors to find relevant usages for their open data
+
+- .red[**Data awareness**] : we train public executives and elected representatives to gain a general culture on data through formations to open data and data science
+
+- .red[**Data mediation**] : we organize hackathons, open data camps, data expeditions...
+
+???
+
+Data mediation is fundamentally a question of community management : that's why we animate the French open data community [#TeamOpenData](https://teamopendata.org).
+
+
+---
+## Qui suis-je ?
+
+.center[<img src="./img/phototim.jpg" height="300"/>]
+.center[[**Timothée Gidoin**](timothee.gidoin@sciencespo.fr)]
+.center[[*Twitter: @TGidoin*](https://twitter.com/Tgidoin)]
+
+
+- Cofondateur de [**Datagora**](www.datagora.fr)
+- Consultant Open Data chez Datactivist
+- Enseignant vacataire à Sciences Po, Sciences Po SGL
+- Formateur Gouvernement ouvert
+
+---
+class: inverse, center, middle
+
+## Et vous, qui êtes-vous ?
+
+---
+## Que va-t-on faire durant ce séminaire ?
+
+--
+.center[<img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" height="400"/>]
+
+---
+## Objectifs du séminaire
+
+- Allier théorie et pratique sur l'utilisation des données et acquérir des connaissances et des compétences **concrètes** que vous pourrez mobiliser dans vos expériences journalistiques
+
+- Vous présenter et faire expérimenter des outils gratuits d'analyse et de représentation graphique ou spatiale de données
+
+- Vous sensibiliser sur les biais des données, l'importance de distinguer les sources, les erreurs classiques à éviter lorsqu'on utilise des données
+
+- Vous faire découvrir des sources de données... et de sujets potentiellement infinis !
+
+- Vous donner des ressources pour celles et ceux qui voudraient aller plus loin dans la manipulation des données
+
+[**DISCLAIMER**] Je n'ai **pas** la science infuse et je ne suis **pas** un expert en journalisme => Participez et échangeons tout au cours de ce séminaire
+
+---
+## Détails des 3 jours :
+
+.red[**Jour 1 - lundi 24 juin :**]
+- Qu'est-ce qu'une donnée ? 
+- L'open data, l'allié du journaliste
+- Manipuler des données avec un tableur : du filtre au TCD
+
+.red[**Jour 2 - mardi 25 juin :**]
+- Les limites des données et les erreurs classiques d'interprétation
+- Reconnaitre et distinguer les sources stats/études
+- Représentation graphique et spatiale de données
+
+.red[**Jour 3 - mercredi 26 juin :**]
+- L'absence de données
+- Récupérer des données autrement (scraping, CADA)
+- Pour aller plus loin
+
+.red[**Jour 4 - jeudi 27 juin : Projet de datajournalisme à rendre**]
+
+---
+
+## Objectifs de la journée
+
+.red[**Matin**]
+- Comprendre ce qu'est une donnée et appréhender la variété des types de données existantes [10h15-11h25]
+
+*Pause 10 minutes ?*
+
+- L'open data, un ami qui vous veut du bien [11h35-13h]
+
+*Pause déjeuner 1 heure*
+
+.red[**Après-midi**]
+- Le data pipeline [14h-14h15]
+- Exercice pratique : manipuler des données sur tableur Lvl1 [14h15-15h25]
+
+*Pause 10 minutes ?*
+
+- Exercice pratique : manipuler des données sur tableur Lvl2 [15h35-17h]
+
+---
+## May the data be with you !
+
+<BR>
+
+.center[<img src="https://media.giphy.com/media/3o7aDgsiRMtIlrSZpu/giphy.gif" height="350"/>]
+
+
+---
+class: inverse, center, middle
+
+# Culture des données
+
+---
+class:middle, center
+## Echauffement :
+### 2 minutes, 10 données
+
+Vous avez 2 minutes
+
+Vous devez trouver 10 données dans notre environnement immédiat
+
+Pas de recours aux écrans !
+
+.footnote[[source](http://infolabs.io/5-minutes-20-donnees)]
+
+---
+class:center,inverse, middle
+# Qu'est-ce 
+# qu'une donnée ?
+
+---
+Class:
+## La pyramide Data-Information-Knowledge-Wisdom
+
+
+.pull-left[[<img src="./img/dikw_pyramid.svg" height="350"/>](https://commons.wikimedia.org/w/index.php?curid=37705247)]
+
+.pull-right[Attribuée à [Russell Ackoff](http://en.wikipedia.org/wiki/Russell_L._Ackoff), 1989
+
+Les données peuvent être des :
+
+- faits
+- signal/stimulis
+- symboles]
+
+---
+Class:
+## La pyramide Data-Information-Knowledge-Wisdom
+
+- Les **.red[données]** sont la matière "brute" d'où naît l'information.
+
+- **.red[L'information]** pourrait être définie comme des données qui ont été consignées,
+classées, organisées, raccordées ou interprétées dans un cadre qui en dégage le sens
+
+- En donnant du sens à de l'information, on obtient de la **.red[connaissance]**
+
+- En donnant du sens à la **.red[connaissance]** on obtient du savoir
+
+---
+Class:
+## La pyramide Data-Information-Knowledge-Wisdom
+
+.center[<img src="./img/competence.png" height="300"/>]
+
+_NB : le haut de la pyramide, est parfois remplacé par "compétence"_
+
+---
+## Qu'est-ce qu'une donnée ?
+
+> *Une donnée correspond à la représentation d'une information sous une forme conventionnelle destinée à faciliter son traitement*
+
+.center[<img src="./img/guidepratique.png" height="400"/>] 
+
+
+.footnote[[source](https://www.cnil.fr/sites/default/files/atoms/files/guide_open_data.pdf)]
+---
+## Le censeur à Rome, ancêtre de la statistique
+.center[<img src="./img/asterix.png" height="350"/>] 
+
+
+.footnote[Source : *Asterix chez les pictes*, © Albert René 2013]
+---
+## Le censeur à Rome, ancêtre de la statistique
+.center[<img src="./img/asterix1.png" height="350"/>] 
+
+.footnote[*Asterix chez les pictes*, © Albert René 2013]
+
+---
+## La statistique : outil de gouvernement et de preuve
+
+.center[<img src="./img/loups.png" height="420"/>] 
+
+---
+## La statistique : outil de gouvernement et de preuve
+.pull-left[.middle[La statistique est à la fois :
+
+  + **Outil de gouvernement** (_Statistik_ - 18e siècle), et
+  
+  
+  + **Outil de preuve** (_statistics_ - 19e siècle)]]
+.pull-right[.reduite2[![center](./img/desrosieres1.jpg)]]
+
+---
+
+## La "nombrification" du monde
+
+.pull-left[.reduite[![](./img/couv_rey.jpg)]]
+.pull-right[
+> La numérisation ne serait pas survenue sans une "nombrification" préalable qui consiste à quantifier de plus en plus d'aspects de notre expérience du réel.
+> **Au commencement était le verbe, il semble à la fin que tout devient nombre.**
+> Personne ne saurait parler sérieusement de l'état de la société et discuter politique sans se référer aux informations quantitatives.]
+
+---
+Class: middle, center
+
+## La mise en données du monde
+
+- Concrètement, aujourd'hui, quels aspects de votre vie sont mis en données ?
+
+--
+
+- Recherches internet, pratiques sportives, consommation énergie, régime alimentaire, trajets dans les transports en commun...
+
+- Cette mise en donnée est rendue possible par le développement de .red[**capteurs**] qui viennent collecter et agréger ces données 
+
+--
+
+- Recherches internet .red[(cookies)], pratiques sportives .red[(montres connectées)], consommation énergie .red[(compteurs connectés)], régime alimentaire .red[(appli type Yuka)], trajets dans les transports en commun .red[(Pass Navigo)]...
+
+- La question devient peut-être, *quels aspects de votre vie ne sont pas (encore) mis en données ?*
+
+---
+Class:
+
+## Les données brutes sont un oxymore
+
+.pull-left[
+> Les données sont toujours "cuisinées" et jamais tout à fait "brutes"
+
+
+> Les données ont besoin au préalable d'être imaginées comme données pour exister et fonctionner comme telles. L'imagination de ces données implique une base d'interprétation
+
+]
+.pull-right[
+![](./img/unitemesure.png)
+
+.footnote[© Xavier Gorce 2018]]
+
+---
+## Data or capta ?
+
+> Techniquement, ce que nous nous appelons "donnée" est généralement **"capturé"** (issu du latin "capere", signifiant "prendre"); ces unités de données qui ont été sélectionnées et collectées parmi l'ensemble de toutes les données possibles
+
+
+[Kitchin, 2014](https://books.google.fr/books?hl=fr&lr=&id=GfOICwAAQBAJ&oi=fnd&pg=PP1&dq=kitchin+data+revolution&ots=pcyfMTZh-V&sig=dQyPTL3AIN_4RdWvtBFw4VjdAa4#v=onepage&q=kitchin%20data%20revolution&f=false)
+
+.center[<img src="./img/robkitchin.jpg" height="250"/>] 
+
+---
+
+## Données ou obtenues ? 
+
+
+> Décidément, on ne devrait jamais parler de “données”, mais toujours d’ “obtenues”.
+
+[Bruno Latour, 1993](http://www.bruno-latour.fr/fr/node/255)
+
+.center[<img src="./img/latour.jpg" height="250"/>] 
+
+---
+class:center,inverse, middle
+
+## Petit lexique autour des données
+
+---
+
+## Données quantitatives
+.pull-left[
+Différents types de variables : 
+- **Nominale** : des catégories que l’on nomme avec un nom (marié/célibataire/divorcé/veuf)
+
+
+- **Ordinale** : échelle de mesure dotant chaque élément d'une valeur qui permet leur classement par ordre de grandeur (faible, moyen, fort)
+
+
+- **Intervalles** : l’intervalle entre deux catégories a toujours la même valeur (12-16°C / 16-20°C / 20-24°C) 
+]
+.pull-right[
+![](img/spread.png)
+]
+
+---
+
+## Données qualitatives
+
+.pull-left[
+Ce sont des données non numériques, par exemple du texte, des images, de la vidéo, du son...
+
+  + Ces données peuvent être converties en données quantitatives
+
+  + Mais on risque de perdre la richesse des données originales
+  
+  + Il est possible de réaliser une analyse qualitative de ces données
+  
+]
+.pull-right[
+![](img/text_mining_intro_2.png)
+]
+
+---
+
+## Données structurées
+
+.pull-left[
+Des données dotées d'un modèle qui définit les relations entre les composantes de la base de données
+
+  + Ex : base de données relationnelle SQL
+  
+  + Lisibles machine
+  
+  + Faciles à analyser, manipuler, visualiser...
+]
+.pull-right[
+![](img/sql.jpeg)
+]
+
+---
+
+## Données structurées
+
+Un exemple concret : le schéma de la base de données relationnelle derrière [la plateforme Datagora](https://www.datagora.fr/) 
+
+.center[<img src="./img/schema_bdd_datagora.png" height="380"/>]
+
+---
+
+## Données semi-structurées
+
+.pull-left[
+Pas de modèle prédéfini : structure irrégulière, implicite... mais données organisées néanmoins, ensemble raisonnable de champs
+
+Exemple : XML, JSON
+
+Possible de trier, ordonner et structurer les données
+]
+.pull-right[
+![](img/ocdsjson.jpg)
+]
+
+---
+
+## Données non structurées
+
+.pull-left[Pas de structure commune identifiable
+Exemple : BDD NoSQL
+
+Généralement qualitatives
+
+Difficilement combinées ou analysées quantitativement
+
+Les données non structurées croitraient 15x plus que les données structurées
+ 
+Le machine learning est de plus en plus capable d'analyser ces données.]
+
+.pull-right[
+![](img/structured-vs-unstructured-data.png)
+]
+
+---
+
+## Données capturées, échappées, transitoires 
+
+** Données capturées**
+
+Données issues d'observations, d'enquêtes, d'expérimentations, de prise de notes, de senseurs... => il y a eu l'**intention de générer des données**
+
+** Données échappées**
+
+Sous-produit d'un engin ou d'un système dont la fonction première est autre
+** Avez-vous des exemples de données échappées ?**
+--
+<BR>
+Parking, borne d'accès... => Des données sur les horaires d'accès, le nombre d'ouvertures, fermetures, la fréquentation
+
+** Données transitoires**
+
+Ce sont des données échappées qui ne sont jamais examinées, transformées ou analysées
+
+
+---
+## Données dérivées
+
+Résultat d'un traitement ou d'une analyse supplémentaire de données capturées. 
+
+Exemple avec les [données de Google Maps](https://www.justinobeirne.com/google-maps-moat) : 
+
+![](https://static1.squarespace.com/static/54ff63f0e4b0bafce6932642/t/5a383fdb41920241ebce859d/1513635810327/3-1+-+Making+AOIs.gif?format=1500w)
+
+Recommandé : Lire l'article ["GOOGLE MAPS’S MOAT - How far ahead of Apple Maps is Google Maps?"](https://www.justinobeirne.com/google-maps-moat)
+
+---
+
+## Les données crowdsourcées
+
+Des données produites par des citoyens, des communs partagés et gouvernés par leurs producteurs.
+
+Concrètement, les données sont issues du travail collaboratif de divers acteurs, bénévoles, dans la récolte sur le terrain.
+
+**Connaissez-vous un site ou une application fonctionnant via des données crowdsourcées ?**
+
+--
+
+.pull-left[Exemple : OpenStreetMap, le wiki de la carte]
+
+.pull-right[
+.reduite[![](img/osm.png)]
+]
+
+---
+## Exemple 1 : OpenStreetMap
+
+En résumé :
+
++ OpenStreetMap (OSM) est un projet de cartographie qui a pour but de constituer une base de données géographiques libre du monde (permettant par exemple de créer des cartes sous licence libre), en utilisant le système GPS et d'autres données libres.
+
++ À la manière de Wikipédia, **tous les internautes naviguant sur le web peuvent contribuer à la création et à la numérisation de cartes**. Des éditeurs permettent de réaliser en ligne des cartes en se basant sur un fond d'image satellitaire. Cependant, ces images satellitaires ne couvrent pas toujours en haute résolution l'ensemble du globe. C'est pourquoi il est possible d'introduire des données provenant de récepteurs GPS. Il suffit pour cela de réaliser un itinéraire et de positionner le récepteur en mode enregistrement, puis de le restituer sur le serveur de données d'OpenStreetMap 
+
+---
+## Exemple 1 : OpenStreetMap
+
+Vous aussi vous pouvez contribuer à OpenStreetMap !
+
+.center[<img src="./img/openstreetmap.png" height="400"/>] 
+
+---
+## Exemple 2 : OpenFoodFacts
+
+.center[<img src="./img/openfoodfacts.png" height="200"/>] 
+
+> Open Food Facts est une base de données sur les produits alimentaires faite par tout le monde, pour tout le monde. Elle vous permet de faire des choix plus informés, et comme les données sont ouvertes (open data), tout le monde peut les utiliser pour tout usage.
+
+> Open Food Facts est un projet citoyen à but non lucratif créé par des milliers de volontaires à travers le monde. Vous pouvez commencer à contribuer en ajoutant un produit de votre cuisine, et nous avons plein de projets enthousiasmants auxquels vous pouvez participer de beaucoup de façons différentes.
+
+---
+## Exemple 2 : OpenFoodFacts
+
+Vous aussi vous pouvez contribuer à OpenFoodFacts !
+
+
+.center[[<img src="./img/openfoodfacts2.png" height="400"/>](https://fr.openfoodfacts.org/contribuer)]
+
+---
+## Exemple 2 : OpenFoodFacts  
+
+Et vous connaissez très probablement une application qui utilise les données d'OpenFoodFacts pour "évaluer" la composition des produits alimentaires...
+
+--
+
+**Yuka** ! Avec plus de 8 millions d'utilisateurs en février 2019, elle a désormais un impact non négligeable, y compris dans la stratégie des grandes marques de l'agroalimentaire..
+
+.center[[<img src="./img/yuka.png" height="300"/>](https://www.liberation.fr/desintox/2018/05/18/yuka-est-elle-une-appli-publicitaire-deguisee_1651227)]
+
+---
+class: inverse, center, middle
+
+## 3. Petit lexique autour des données 
+
+---
+
+##Index
+
+**Index** : Des données permettent l'identification et la mise en relation. Essentielles pour enrichir les données. Exemple : le numéro de SIRET dans la base Sirene (informations concernant les entreprises et les établissements immatriculés au répertoire interadministratif Sirene depuis sa création en 1973), gérée par l'Insee
+
+.center[[<img src="./img/base_sirene.png" height="300"/>](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&disjunctive.rpet&disjunctive.depet&disjunctive.libcom&disjunctive.siege&disjunctive.libapet&disjunctive.libtefet&disjunctive.saisonat&disjunctive.libnj&disjunctive.libapen&disjunctive.ess&disjunctive.libtefen&disjunctive.categorie&disjunctive.proden&disjunctive.libtu&disjunctive.liborigine&disjunctive.libtca&disjunctive.libreg_new&disjunctive.nom_dept&disjunctive.section)]
+
+
+---
+
+## Attributs
+
+**Attributs** : Des données représentent les aspects d'un phénomène, mais ne sont pas des index (pas identifiants uniques). Exemples avec la base Sirene : région de l'établissement, département de l'établissement, Iris de l'établissement...
+
+.center[[<img src="./img/base_sirene2.png" height="300"/>](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&disjunctive.rpet&disjunctive.depet&disjunctive.libcom&disjunctive.siege&disjunctive.libapet&disjunctive.libtefet&disjunctive.saisonat&disjunctive.libnj&disjunctive.libapen&disjunctive.ess&disjunctive.libtefen&disjunctive.categorie&disjunctive.proden&disjunctive.libtu&disjunctive.liborigine&disjunctive.libtca&disjunctive.libreg_new&disjunctive.nom_dept&disjunctive.section)]
+
+---
+
+## Métadonnées 
+
+**Métadonnées** : Des données sur les données. Peuvent être descriptives, structurelles ou administratives. Exemple de standard : le [Dublin Core](https://fr.wikipedia.org/wiki/Dublin_Core). 
+
+Pour notre exemple précédent, les métadonnées (date de modification, producteur, nombre de téléchargements, thématiques...) sont les suivantes :
+
+.center[[<img src="./img/base_sirene3.png" height="330"/>](https://public.opendatasoft.com/explore/dataset/sirene/information/?flg=fr&disjunctive.rpet&disjunctive.depet&disjunctive.libcom&disjunctive.siege&disjunctive.libapet&disjunctive.libtefet&disjunctive.saisonat&disjunctive.libnj&disjunctive.libapen&disjunctive.ess&disjunctive.libtefen&disjunctive.categorie&disjunctive.proden&disjunctive.libtu&disjunctive.liborigine&disjunctive.libtca&disjunctive.libreg_new&disjunctive.nom_dept&disjunctive.section)]
+
+
+---
+class:center, middle, inverse
+##Pause café : 10 minutes
+
+---
+class: inverse, center, middle
+
+# Open data : les grands principes
+
+---
+## Open data : définition
+
+Selon Wikipedia, une donnée ouverte c'est :
+> une donnée numérique, d'origine publique ou privée, publiée de manière structurée selon une méthodologie qui garantit son libre accès et sa réutilisation par tous, sans restriction.
+**L'ouverture des données est à la fois un mouvement, une philosophie d'accès à l'information et une pratique de publication de données** librement accessibles et exploitables.
+
+Selon [le gouvernement](https://www.gouvernement.fr/action/l-ouverture-des-donnees-publiques) :
+> L'open data désigne l'effort que font les institutions qui partagent les données dont elles disposent. Ce partage doit être **gratuit, dans des formats ouverts, et permettre la réutilisation des données.**
+
+La loi française considère que les données produites ou détenues par les administrations, dans le cadre de leurs missions de service public, doivent être mises à disposition du public. Cela ne concerne ni les informations personnelles, ni celles touchant à la sécurité nationale
+
+---
+## Open data : quelques jalons historiques
+![](img/chrono.png)
+
+---
+
+## 07 Décembre 2007 : la rencontre de Sebastopol 
+
+.pull-left[
+👥 **Quoi ?** Une rencontre de l'Open Governement Group à Sebastopol (Californie), siège des éditions O'Reilly
+
+🎯 **Pourquoi ?** : Influencer le futur président des Etats Unis pour faire avancer l'open data
+
+📜 **Comment ?** En adoptant une déclaration définissant les grands principes de l'Open Government Data 
+
+
+]
+.pull-right[
+![](img/photofamille.jpg)
+]
+
+---
+class:middle, center
+![](img/session.jpg)
+# Revue des principes
+
+---
+class: middle, center
+
+# 1. Des données complètes
+### Toutes les données publiques doivent être rendues disponibles dans les limites légales liées à la vie privée ou la sécurité
+---
+class: middle, center
+
+![](img/opendata.jpg)
+# PAR DEFAUT
+
+#### L'open data par défaut, signifie que, sauf exception (données personnelles, intérêt national), toutes les données peuvent être ouvertes. A minima toutes les données déjà existantes au format numérique
+
+---
+class: middle, center
+
+# 2. Des données primaires
+###  Les données ouvertes sont telles que collectées à la source, non-agrégées avec le plus haut niveau de granularité
+
+---
+class: middle, center
+
+# 3. Des données fraiches (*timely*)
+### Les données doivent être disponibles dès qu'elles sont produites
+
+---
+class: middle, center
+
+# 4. Des données accessibles 
+### Les données doivent être utilisables par le plus grand nombre d’usagers potentiels
+
+---
+class: middle, center
+
+# 5. Des données exploitables par les machines 
+###  Les données peuvent être traitées automatiquement par les machines
+
+---
+class: middle, center
+
+# 6.Des données non discriminatoires 
+### Elles peuvent être utilisées par tous sans réclamer un enregistrement préalable
+---
+class: middle, center
+
+# 7. Des données dans un format ouvert
+### Ce format ne doit pas être la propriété d'une organisation en particulier (.xls) et doit être gouvernée par ses usagers
+
+---
+class: middle, center
+
+# 8. Des données dans une licence ouverte
+### Idéalement dans le domaine public sinon dans une licence conforme à l'[Open Definition](www.opendefinition.org) : Licence Ouverte (CC-BY) ou ODBL (CC-BY-SA)
+
+---
+## Open data : pour aller plus loin
+
+Retrouvez [les 8 principes de l'ouverture des données publiques ](https://public.resource.org/8_principles.html) qui ont été adoptés au cours du week-end du 7-8 décembre 2007 à Sébastopol, puis soumis à commentaires
+
+.center[![](img/sunlightfoundation.png)]
+
+Cette liste a ensuite été mise à jour et complétée en 2010 ([10 principes](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)) par la Sunlight Foundation.
+En 2013, cette dernière a rédigé des instructions et recommandations pour appliquer l'open data (["Open Data guidelines"](http://sunlightf.wpengine.com/wp-content/uploads/2016/09/OpenDataGuidelines_v3.pdf)) sur la base des 10 principes
+
+---
+## Open data : pour aller plus loin
+
+Ecoutez les explications de Larry Lessig sur les raisons de cette conférence :
+
+.center[[<img src="./img/lessig.png" height="370"/>](https://youtu.be/AmlzW980i5A)]
+
+---
+class:inverse, middle, center
+# L'open data dans la pratique
+
+---
+
+## Défi 1 : la découvrabilité des données
+
+> La découvrabilité des données est un défi majeur. Nous avons des portails de données et des registres, mais les agences gouvernementales appartenant à un gouvernement national publient toujours des données de différentes manières et à différents endroits. (…) 
+**La découverte des données est une condition préalable pour que les données ouvertes atteignent leur potentiel et la plupart des données sont actuellement difficiles à trouver.**
+
+.center[<img src="./img/datagapsclean.jpg" height="200"/>] 
+
+
+.footnote[https://index.okfn.org/insights/]
+
+---
+
+## Défi 1 : la découvrabilité des données
+
+Pour faciliter la découvrabilité des données, **il est indispensable de renseigner correctement les métadonnées**, i.e les données descriptives des données ouvertes. Notamment : 
++ Nom du producteur de données
++ Date de publication
++ Fréquence d'actualisation
++ Dernière date de mise à jour
++ Description des données
++ Détails des variables
++ Thématique / tags
++ Couverture (années, zone géographique concernée)
+
+(*liste non exhaustive*)
+
+---
+
+## Défi 1 : la découvrabilité des données
+
+L'équipe Datactivist a réalisé au cours de l'été 2017 un recensement des données ouvertures par 15 grandes villes françaises (Paris, Lyon, Lille, Rennes...). Plus de 400 jeux de données ouvertes ont été recensés, mais les identifier n'a pas toujours été simple...
+
+.center[<img src="./img/recensement3.png" height="240"/>] 
+
+
+.footnote[Lire l'article Medium [Qui a ouvert quoi ? le recensement des données des villes est maintenant ouvert](https://medium.com/datactivist/qui-a-ouvert-quoi-le-recensement-des-donn%C3%A9es-des-villes-est-maintenant-ouvert-b7f697135c1f)] 
+
+---
+
+## Défi 1 : la découvrabilité des données
+
+Ainsi,
+> **La moitié des descriptions des jeux de données fait moins de 180 caractères** et
+4% des jeux de données ont une description supérieure à 1000 caractères soit moins d’une demi-page
+
+Au-delà des descriptions souvent très lacunaires, un autre enjeu est d'**expliciter le nom des variables**. Celles-ci peuvent parfois contenir des acronymes, qui sont compréhensibles pour les agents publics qui les traitent au quotidien, mais peu lisibles pour le grand public. Il n'est pas rare de trouver des variables comme "**acces_pmr**" qui signifie "est-ce que le site est accessible aux personnes à mobilité réduite" et sans avoir le détail dans les métadonnées associées.
+
+Dans l'exemple ci-après, [l'enquête Etic du Ministère de l'éducation nationale](https://data.education.gouv.fr/explore/dataset/fr-en-etic_1d/table/), plusieurs colonnes ont des intitulés difficilement compréhensibles tels que "SiEquipementInf" ou "Maint_PersEducHEcole" mais celles-ci sont décrites dans les métadonnées du jeu de données
+
+---
+
+## Défi 1 : la découvrabilité des données
+
+.center[[<img src="./img/etic.png" height="400"/>](https://data.education.gouv.fr/explore/dataset/fr-en-etic_1d/table/)]
+
+---
+
+## Défi 1 : la découvrabilité des données
+
+.center[<img src="./img/metadonnees.png" height="400"/>]
+
+---
+
+## Défi 2 : le problème de la qualité
+
+>**Les données gouvernementales sont généralement incomplètes, obsolètes, de mauvaise qualité et fragmentées.** Dans la plupart des cas, les catalogues de données ouverts ou les portails sont alimentés manuellement à la suite d'approches informelles de gestion des données. **Les procédures, les délais et les responsabilités sont souvent peu clairs** parmi les institutions gouvernementales chargées de ce travail.
+
+.center[<img src="./img/odb.png" height="200"/>] 
+
+
+.footnote[http://opendatabarometer.org/4thedition/report/]
+
+---
+
+## Défi 2 : le problème de la qualité
+
+Des données parfois très très agrégées...
+
+.center[![](img/deception.gif)]
+
+---
+## Défi 2 : le problème de la qualité
+
+Ou très difficilement exploitables...
+
+.center[<img src="./img/recensement2.png" height="350"/>] 
+
+
+.footnote[[Source](https://medium.com/datactivist/qui-a-ouvert-quoi-le-recensement-des-donn%C3%A9es-des-villes-est-maintenant-ouvert-b7f697135c1f)]
+
+
+---
+## Défi 2 : le problème de la qualité
+
+Ou très difficilement exploitables...
+
+.center[<img src="./img/recensement1.png" height="350"/>] 
+
+
+.footnote[[Source](https://medium.com/datactivist/qui-a-ouvert-quoi-le-recensement-des-donn%C3%A9es-des-villes-est-maintenant-ouvert-b7f697135c1f)]
+
+---
+
+class:inverse, middle, center
+## Connaissez-vous des plateformes open data ?
+--
+
+## Quels jeux de données utilisez-vous ?
+
+---
+## Data.gouv.fr ?
+
+Data.gouv est la plateforme nationale ouverte des données publiques françaises.
+Elle a été conçue et inaugurée en 2011, par la mission Etalab, puis refondue en 2013.
+
+.center[<img src="./img/datagouvfr.png" height="250"/>] 
+
+On y trouve des milliers de jeux de données, provenant principalement de producteurs publics (Ministère de l'intérieur, Agence française de développement, Insee, Ville de Paris, Région Bretagne, CNIL...) mais aussi de producteurs tiers (OpenStreetMap, OpenFoodFacts...)
+
+---
+## Au-delà de data.gouv.fr
+
+Data.gouv.fr est la plateforme **nationale** d'open data mais ce n'est pas la seule plateforme publique qui met à disposition des données ouvertes. Il existe :
+
++ Des plateformes open data gérées par les **collectivités territoriales**. Par exemple, [Paris Data](https://opendata.paris.fr/explore/?sort=modified), [la Région Occitanie](https://data.laregion.fr/pages/accueil/), [l'agglomération de Saint-Malo](https://data.stmalo-agglomeration.fr/page/accueil/)...
+
++ Des plateformes open data gérées par des **ministères**. Exemple : [data.education.gouv.fr](https://data.education.gouv.fr/pages/accueil/)
+
++ Des plateformes open data gérées par des **entreprises**. Exemple [DataNova](https://datanova.laposte.fr/page/accueil/) (La Poste)
+
++ Des jeux de données directement publiés sur le site des producteurs de données, sans plateforme dédiée. Exemple : Insee
+
+---
+## Exemple de données ouvertes: la base SIRENE
+
+.center[.reduite2[![](img/sirene.png)]]
+
+---
+##Exemple de données ouvertes : les accidents de la route
+.reduite[.center[![](img/accidents.png)]]
+
+---
+
+## Exemple de données ouvertes : les contrôles sanitaires
+
+.reduite2[.center[![](img/aliminfos.png)]]
+.footnote[[Résultats des contrôles officiels sanitaires : dispositif d'information « Alim’confiance »](https://www.data.gouv.fr/fr/datasets/resultats-des-controles-officiels-sanitaires-dispositif-dinformation-alimconfiance/)]
+
+---
+
+## Exemple de données ouvertes : les contrôles sanitaires
+
+.reduite2[.center[![](img/resto.png)]]
+.footnote[[26 établissements au niveau d'hygiène à corriger de manière urgente ](https://dgal.opendatasoft.com/explore/embed/dataset/export_alimconfiance/map/?disjunctive.app_libelle_activite_etablissement&disjunctive.filtre&refine.synthese_eval_sanit=A%20corriger%20de%20mani%C3%A8re%20urgente&location=6,47.24195,5.00977&static=false&datasetcard=true)]
+
+---
+
+## Exemple de données ouvertes : autorisations de terrasses
+
+.reduite2[.center[![](img/terrasses.png)]]
+.footnote[[Etalages et terrasses](https://opendata.paris.fr/explore/dataset/etalages-et-terrasses/map/?disjunctive.libelle_type&disjunctive.red_profession&location=18,48.87183,2.30196&basemap=jawg.streets)]
+
+---
+
+class: inverse, center, middle
+
+# Pause déjeuner \o/
+
+---
+class: center, middle, inverse
+
+# Le data pipeline
+
+---
+
+## Le pipeline de données
+
+![largeur](./img/pipeline.png)
+
+---
+## Vérifier les données
+
+[![](img/sprint.png)](http://infolabs.io/sprint-qualite)
+
+---
+## Nettoyer les données
+
+Paradigme du [_tidy data_](http://vita.had.co.nz/papers/tidy-data.pdf) (Hadley Wickham)
+
+> “Les familles heureuses sont toutes pareilles; chaque famille malheureuse est malheureuse à sa manière.” – Leon Tolstoï 
+
+> “Les jeux de données ordonnés se ressemblent tous, mais chaque jeu de données désordonné est désordonné à sa manière
+.” – Hadley Wickham
+
+**Principes du *tidy data* ("données ordonnées")**
+- Chaque variable correspond à une colonne
+- Chaque observation/individu correspond à une ligne
+- Chaque type d'unité d'observation correspond à une table
+- Chaque cellule comporte une donnée 
+
+---
+# Visualiser les données
+### *Choisir un format de visualisation*
+
+.center[[<img src="./img/datavizcatalogue.png" height="400"/>](http://www.datavizcatalogue.com/)]
+
+---
+# Visualiser les données
+### *Trouver un outil*
+
+.center[[<img src="./img/opennews.png" height="400"/>](https://source.opennews.org/articles/what-i-learned-recreating-one-chart-using-24-tools/)]
+
+---
+class: inverse, center, middle
+
+# Fini de parler... à vous de jouer !
+
+---
+## Analyse de données via tableur : filtre et tri
+
+- Cherchez le jeu de données sur le nombre de redevables à l'ISF et le montant moyen associé, et téléchargez le
+
+- Quelle différence entre les onglets *définitif* et *définitif_patrimoine* ?
+
+- Triez l'onglet *définitif_patrimoine* pour qu'il redevienne identique à l'onglet *définitif*
+
+- Calculez l'ISF moyen payé par commune dans la colonne h
+
+- Quelles sont les communes payant le plus d'ISF en 2017 (en absolu) ?
+
+- Quelles sont les communes d'IDF payant le plus d'ISF en 2017 (en absolu) ?
+
+- Quels sont les départements parisiens payant le plus d'ISF en 2017 (en absolu) ?
+
+---
+## Analyse de données via tableur : fonctions
+
+- Quel est le montant moyen de l'ISF versé par commune ?
+
+- Quel est le montant total d'ISF versé par ces communes ?
+--
+
+Utilisez la fonction *sommeprod*
+
+- Partons du principe que le montant moyen persé par les redevables à l'ISF de Levallois Perret est un bon étalon, calculez le montant ISF total si tous les redevables français devaient payer le même montant. Quel serait le montant total ? Et Neuilly ?
+--
+
+Bloquez des cellules avec les $
+
+- Vous souhaitez visualiser en un coup d'oeil la différence de patrimoine entre les redevables à l'ISF, utilisez pour cela la mise en forme conditionnelle
+
+---
+## Analyse de données via tableur : fonctions
+
+.center[<img src="https://media.giphy.com/media/l0HlTyjbjbv9qabCM/source.gif" height="400"/>]
+
+
+---
+## Analyse de données via tableur : fonctions
+
+- Vous souhaitez récupérer le nombre de redevables à l'ISF en Ille et Vilaine mais sans utiliser de filtres ou de tri...
+--
+
+Fonction *somme.si*
+
+- Vous souhaitez récupérer le nombre de redevables à l'ISF à Paris mais seuelement dans les arrondissements pour lesquels l'ISF moyen est supérieur à 10 000€ (et sans utiliser de filtres ou de tri...) :)
+
+--
+
+Fonction *somme.si.ens*
+
+
+- On réitère - avec les mêmes contraintes - mais la subtilité c'est qu'on ne veut pas connaitre le montant mais le nombre de villes en Ille et Vilaine redevables à l'ISF
+
+--
+
+Fonction *nb.si*
+
+- Et combien il y a-t-il d'arrondissements parisiens qui ont des redevables avec un ISF moyen supérieur à 10 000€ ? 
+--
+Fonction *nb.si.ens*
+
+---
+## Analyse de données via tableur : recherchev
+
+- Les données de l'ISF sont intéressantes mais il manque une variable clé : .red[**la population**]
+
+- Allez chercher un jeu de données permettant de récupérer les données du recensement démographique commune par commune
+
+- Regardez comment il est construit et trouvez les colonnes qui vous intéressent
+
+- Dans un nouvel onglet sur le classeur ISF, copiez collez les colonnes ISF et rajoutez une colonne dans laquelle vous allez récupérer le nombre d'habitants associés à chaque commune. Utilisez pour cela... la fonction *recherchev*
+
+---
+## Analyse de données via tableur : recherchev
+
+.center[<img src="https://media.giphy.com/media/KHfidaIqN0Sqc/giphy.gif" height="350"/>]
+
+---
+
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [timothee@datactivi.st](mailto:timothee@datactivi.st)
