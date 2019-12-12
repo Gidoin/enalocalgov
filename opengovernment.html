@@ -1,30 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Open Government</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Timothée Gidoin" />
+    <meta name="date" content="2019-12-13" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/ena.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/sciencespo-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Open Government
+## Winter School 2019
+### Timothée Gidoin
+### 2019-12-13
+
 ---
-title: "Open Government"
-subtitle: "Winter School 2019"
-author: "Timothée Gidoin"
-date: "`r Sys.Date()`"
-output:
-  SlidesDatactivist::moon_reader:
-    css: [default, ena, sciencespo-fonts]
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      beforeInit: "macros.js"
-      slideNumberFormat: |
-        <div class="progress-bar-container">
-          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
-          </div>
-        </div>
-params:
-  event: Winter School 2019 - Session on Open Government
-  slug: opengovernment.html
----
+
 
 layout: true
 
-<style>
+&lt;style&gt;
 .remark-slide-number {
   position: inherit;
 }
@@ -43,32 +42,32 @@ layout: true
   background-color: #006D6A;
 }
 
-</style>
+&lt;/style&gt;
 
 
-`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='https://ena.fr/images/1dd4ffb-2fb81ec.png' width='100px'></center></span></div>")`
+&lt;div class='my-footer'&gt;&lt;span&gt;Winter School 2019 - Session on Open Government&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='https://ena.fr/images/1dd4ffb-2fb81ec.png' width='100px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt;
 
 ---
 ## Before we start
 
-<BR>
+&lt;BR&gt;
 
-#### Slides : `r paste0("https://gidoin.github.io/enalocalgov/", params$slug)`
+#### Slides : https://gidoin.github.io/enalocalgov/opengovernment.html
 
-#### Sources : `r paste0("https://github.com/Gidoin/enalocalgov/")`
+#### Sources : https://github.com/Gidoin/enalocalgov/
 
 This production is freely reusable under the terms of the licence  [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
 
 .center[ *** Those slides were partly designed and inspired by the work of my teammates at Datactivist, I warmly thank them. ***]
 
-<BR>
+&lt;BR&gt;
 
-.center[<img src="./img/ccbysa.png" height="100"/>] 
+.center[&lt;img src="./img/ccbysa.png" height="100"/&gt;] 
 
 ---
 ## Who am I ?
 
-.center[<img src="./img/phototim.jpg" height="300"/>]
+.center[&lt;img src="./img/phototim.jpg" height="300"/&gt;]
 .center[[**Timothée Gidoin**](https://www.linkedin.com/in/timoth%C3%A9e-gidoin-49518880/)]
 .center[[*Twitter: @TGidoin*](https://twitter.com/Tgidoin)]
 
@@ -86,14 +85,14 @@ We have many statistical institutes (such as OECD, Insee...) that currently feed
 
 We are part of **.red[Democratie Ouverte]** ecosystem and alumni of its incubator.
 
-[.center[<img src="./img/datagora1.png" height = "300" />]](www.datagora.fr)
+[.center[&lt;img src="./img/datagora1.png" height = "300" /&gt;]](www.datagora.fr)
 
 ---
 ## Datactivist 
 
 [![](https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png)](https://datactivist.coop)
 
-<BR>
+&lt;BR&gt;
 
 Datactivist is an .red[**open data pure player**] founded in 2016. 3 main activities :
 
@@ -126,8 +125,8 @@ class: inverse, center, middle
 
 .red[**Thursday 19/12 (2 - 5 pm) : French Civic Tech ecosystem**]
 - Visit of "Les halles civiques" and introduction of "Démocratie Ouverte"
-- **Civic & Gov tech** : focus on French & European ecosystems
-- How may Civic & Gov tech foster **public innovation** ?
+- **Civic &amp; Gov tech** : focus on French &amp; European ecosystems
+- How may Civic &amp; Gov tech foster **public innovation** ?
 
 ---
 class: inverse, center, middle
@@ -138,15 +137,15 @@ class: inverse, center, middle
 
 ## What does Opengov mean ?
 
-.center[<img src="https://media.giphy.com/media/LrGHJGtTbT7PO/giphy.gif" height="400"/>]
+.center[&lt;img src="https://media.giphy.com/media/LrGHJGtTbT7PO/giphy.gif" height="400"/&gt;]
 
 ---
 
 ## A definition of Opengov
 
-> The OECD defines open government as a culture of governance based on innovative and sustainable public policies and practices inspired by the principles of .red[**transparency, accountability and participation**] that **fosters democracy and inclusive growth**
+&gt; The OECD defines open government as a culture of governance based on innovative and sustainable public policies and practices inspired by the principles of .red[**transparency, accountability and participation**] that **fosters democracy and inclusive growth**
 
-.center[<img src="./img/oecd.png" height="300"/>]
+.center[&lt;img src="./img/oecd.png" height="300"/&gt;]
 
 .footnote[[OECD report](https://read.oecd-ilibrary.org/governance/open-government_9789264268104-en#page1)]
 
@@ -155,7 +154,7 @@ class: inverse, center, middle
 ## A definition of Opengov
 
 
-.center[<img src="./img/gouvouvert.png" height="470"/>]
+.center[&lt;img src="./img/gouvouvert.png" height="470"/&gt;]
 
 .footnote[[Source: Démocratie Ouverte](https://fr.wikipedia.org/wiki/Gouvernement_ouvert#/media/Fichier:D%C3%A9mocratie_Ouverte.png)]
 
@@ -204,7 +203,7 @@ The **Open Government Partnership** aka OGP
 ## Open Government Partnership
 
 
-.center[<img src="./img/ogp.png" height="200"/>] 
+.center[&lt;img src="./img/ogp.png" height="200"/&gt;] 
 
 In September 2011, a multilateral partnership has been created so as to promote the Open Gov principles and to translate them into concrete public policies : it's called **Open Government Partnership** (OGP)
 
@@ -215,14 +214,14 @@ Initially founded by 8 countries ( Brazil, Indonesia, Mexico, Norway, Philippine
 
 Do you know whether your country is part of OGP ?
 --
-[.center[<img src="./img/ogp1.png" height="430"/>]](https://en.wikipedia.org/wiki/Open_Government_Partnership)
+[.center[&lt;img src="./img/ogp1.png" height="430"/&gt;]](https://en.wikipedia.org/wiki/Open_Government_Partnership)
 
 ---
 ## Open Government Partnership
 
 How does OGP work ?
 
-.center[<img src="https://media.giphy.com/media/IbUUbU4xUDJWcgGMGP/giphy.gif" height="370"/>]
+.center[&lt;img src="https://media.giphy.com/media/IbUUbU4xUDJWcgGMGP/giphy.gif" height="370"/&gt;]
 
 ---
 ## Open Government Partnership
@@ -245,7 +244,7 @@ For instance :
 
 Example: South Africa National Action Plan (2016-2018)
 
-.center[<img src="./img/ogpsa.png" height="350"/>]
+.center[&lt;img src="./img/ogpsa.png" height="350"/&gt;]
 
 .footnote[[Read South Africa 3rd National Action Plan (2016-2018)](https://www.opengovpartnership.org/wp-content/uploads/2019/06/South-Africa_NAP_2016-2018.docx)]
 
@@ -254,7 +253,7 @@ Example: South Africa National Action Plan (2016-2018)
 
 The 1st and 2nd commitments of SA National Action Plan (2016-2018) :
 
-.center[<img src="./img/ogpex.png" height="350"/>]
+.center[&lt;img src="./img/ogpex.png" height="350"/&gt;]
 
 .footnote[[Read South Africa 3rd National Action Plan (2016-2018)](https://www.opengovpartnership.org/wp-content/uploads/2019/06/South-Africa_NAP_2016-2018.docx)]
 
@@ -264,7 +263,7 @@ The 1st and 2nd commitments of SA National Action Plan (2016-2018) :
 
 Those commitments are then audited by **independent experts and researchers (.red[IRM])** both on the way they were designed/written and on their state of progress
 
-.center[<img src="./img/ogp3.png" height="280"/>]
+.center[&lt;img src="./img/ogp3.png" height="280"/&gt;]
 
 .footnote[[Read South Africa End-of-Term IRM Report 2016-2018](https://www.opengovpartnership.org/wp-content/uploads/2019/06/South-Africa_NAP_2016-2018.docx)]
 
@@ -281,28 +280,28 @@ class: inverse, center, middle
 
 In 2016, OGP OGP launched the “Subnational Government Pilot Program”
 
-> This decision recognized that many open government innovations and reforms are **happening at the local level** where governments can engage more directly with citizens and many crucial public services are delivered
+&gt; This decision recognized that many open government innovations and reforms are **happening at the local level** where governments can engage more directly with citizens and many crucial public services are delivered
 
 The Pilot program consisted of 15 “pioneer” subnational governments who signed onto the Open Government Subnational Declaration and submitted their first Action Plans.
 
 Then in 2018, OGP supported the launch of a global Community of Practice on Transparency and Local Open Government within the United Cities and Local Governments (UCLG)
 
-> This Community of Practice will support peer learning, networking, and wider awareness and capacity development on open governance and public integrity at the local level. 
+&gt; This Community of Practice will support peer learning, networking, and wider awareness and capacity development on open governance and public integrity at the local level. 
 
 ---
 
 ## OGP and local gov
 
 There are currently 20 members in the OGP Local Program. 
-> Representing over 74 million citizens, OGP Local members are spread across all regions and illustrate the diversity in types of local governments.
+&gt; Representing over 74 million citizens, OGP Local members are spread across all regions and illustrate the diversity in types of local governments.
 
-.center[<img src="./img/ogp4.png" height="350" />]
+.center[&lt;img src="./img/ogp4.png" height="350" /&gt;]
 
 ---
 
 ## OGP and local gov : Paris
 
-.center[<img src="./img/ogpparis.png" height="400" />]
+.center[&lt;img src="./img/ogpparis.png" height="400" /&gt;]
 
 .footnote[[Paris 2016-2017 Action plan](https://www.opengovpartnership.org/members/paris-france/)]
 
@@ -310,7 +309,7 @@ There are currently 20 members in the OGP Local Program.
 
 ## OGP and local gov : Paris
 
-.center[<img src="./img/ogpparis1.png" height="400" />]
+.center[&lt;img src="./img/ogpparis1.png" height="400" /&gt;]
 
 
 .footnote[[Paris IRM final report](https://www.opengovpartnership.org/wp-content/uploads/2019/02/Paris_Final-Report_2017.pdf)]
@@ -319,7 +318,7 @@ There are currently 20 members in the OGP Local Program.
 
 ## OGP and local gov : Paris
 
-.center[<img src="./img/ogpparis2.png" height="400" />]
+.center[&lt;img src="./img/ogpparis2.png" height="400" /&gt;]
 
 
 .footnote[[Paris IRM final report](https://www.opengovpartnership.org/wp-content/uploads/2019/02/Paris_Final-Report_2017.pdf)]
@@ -328,7 +327,7 @@ There are currently 20 members in the OGP Local Program.
 
 ## OGP and local gov : Paris
 
-.center[<img src="./img/ogpparis3.png" height="400" />]
+.center[&lt;img src="./img/ogpparis3.png" height="400" /&gt;]
 
 
 .footnote[[Paris IRM final report](https://www.opengovpartnership.org/wp-content/uploads/2019/02/Paris_Final-Report_2017.pdf)]
@@ -343,13 +342,13 @@ class: inverse, center, middle
 ## Open data : definition
 
 According to Wikipedia, open data is :
-> Open data is the idea that some data should be freely available to everyone to use and republish as they wish. One of the most important forms of open data is open government data (OGD), which is a form of open data created by ruling institutions.
+&gt; Open data is the idea that some data should be freely available to everyone to use and republish as they wish. One of the most important forms of open data is open government data (OGD), which is a form of open data created by ruling institutions.
 
 **Open data is both a idealogical movement and a practical way of publishing data freely available and usable**
 
 According to [French Government](https://www.gouvernement.fr/action/l-ouverture-des-donnees-publiques) :
 
-> Open data deals with the effort that public organisms do in order to share the data that they own. This opening has to be done **for free, in public format and allow reuse of data**
+&gt; Open data deals with the effort that public organisms do in order to share the data that they own. This opening has to be done **for free, in public format and allow reuse of data**
 
 French law considers that data produced/owned by public administrations/local authorities have to be made available to everyone.
 --
@@ -359,7 +358,7 @@ French law considers that data produced/owned by public administrations/local au
 class: 
 ## Why should Govt open data ?
 
-.center[<img src="https://media.giphy.com/media/vzvFGQs0P013i/giphy.gif" height="250" />]
+.center[&lt;img src="https://media.giphy.com/media/vzvFGQs0P013i/giphy.gif" height="250" /&gt;]
 
 --
 
@@ -511,7 +510,7 @@ class:inverse, middle, center
 
 .red[Data.gouv.fr] is the national platform for French public data.
 It was designed and inaugurated in 2011, by the **Etalab** mission, and then refreshed in 2013.
-.center[<img src="./img/datagouvfr.png" height="250"/>] 
+.center[&lt;img src="./img/datagouvfr.png" height="250"/&gt;] 
 
 There are thousands of datasets (but not only) coming from different type of public data producers such as Ministries, independent agencies, statistical institutes, local authorities but also third parties producers such as OpenStreetMap or OpenFoodFacts
 
@@ -548,10 +547,10 @@ class:inverse, middle, center
 ---
 ## Challenge 1 : data findability
 
-> Data findability is a major challenge. We have data portals and registries, but government agencies under one national government still publish data in different ways and different locations.(…)
+&gt; Data findability is a major challenge. We have data portals and registries, but government agencies under one national government still publish data in different ways and different locations.(…)
 **Data findability is a prerequisite for open data to fulfill its potential and currently most data is very hard to find.** 
 
-.center[<img src="https://index.okfn.org/images/Datagapsclean.jpg" height="280" />]
+.center[&lt;img src="https://index.okfn.org/images/Datagapsclean.jpg" height="280" /&gt;]
 
 .footnote[https://index.okfn.org/insights/]
 
@@ -584,7 +583,7 @@ According to you, how can we improve data findability ?
 
 Summer 2017, Datactivist realized a census of all the datasets opened by 15 major French cities (Paris, Lyon, Lille, Nantes...). More than 400 datasets were listed but identifying them was not easy at all...
 
-.center[<img src="./img/recensement3.png" height="350"/>] 
+.center[&lt;img src="./img/recensement3.png" height="350"/&gt;] 
 
 .footnote[[Medium article](https://medium.com/datactivist/qui-a-ouvert-quoi-le-recensement-des-donn%C3%A9es-des-villes-est-maintenant-ouvert-b7f697135c1f)]
 
@@ -593,7 +592,7 @@ Summer 2017, Datactivist realized a census of all the datasets opened by 15 majo
 ## Challenge 1 : data findability
 
 Thus,
-> ** Half of the descriptions of data opened by local authorities were written with less than 180 caracters** and only 4% of the datasets had a description abova 1000 caracters
+&gt; ** Half of the descriptions of data opened by local authorities were written with less than 180 caracters** and only 4% of the datasets had a description abova 1000 caracters
 
 Beyond very short descriptions, another challenge is to **detail the name of the variables**. Often they contain acronyms that make sense for public agents but can't be understood by common citizens.
 
@@ -603,29 +602,29 @@ In the exemple next slide, [l'enquête Etic du Ministère de l'éducation nation
 
 ## Challenge 1 : data findability
 
-.center[[<img src="./img/etic.png" height="400"/>](https://data.education.gouv.fr/explore/dataset/fr-en-etic_1d/table/)]
+.center[[&lt;img src="./img/etic.png" height="400"/&gt;](https://data.education.gouv.fr/explore/dataset/fr-en-etic_1d/table/)]
 
 ---
 
 ## Challenge 1 : data findability
 
-.center[<img src="./img/metadonnees.png" height="400"/>]
+.center[&lt;img src="./img/metadonnees.png" height="400"/&gt;]
 
 ---
 
 ## Challenge 1 : data findability
 
-.center[<img src="https://media.giphy.com/media/l4HodBpDmoMA5p9bG/giphy.gif" height="400"/>]
+.center[&lt;img src="https://media.giphy.com/media/l4HodBpDmoMA5p9bG/giphy.gif" height="400"/&gt;]
 
 ---
 ## Challenge 2 : data quality
 
 
-> **Government data is usually incomplete, out of date, of low quality, and fragmented.** In most cases, open data catalogues or portals are manually fed as the result of informal data management approaches. **Procedures, timelines, and responsibilities are frequently unclear among government institutions tasked with this work.**
+&gt; **Government data is usually incomplete, out of date, of low quality, and fragmented.** In most cases, open data catalogues or portals are manually fed as the result of informal data management approaches. **Procedures, timelines, and responsibilities are frequently unclear among government institutions tasked with this work.**
 
 OpenDataBarometer ?
 
-> It's a global measure of how governments are publishing and using open data for accountability, innovation and social impact. The Leaders Edition looks at the 30 governments that have adopted the Open Data Charter and those that, as G20 members, have committed to G20 Anti-Corruption Open Data Principles.
+&gt; It's a global measure of how governments are publishing and using open data for accountability, innovation and social impact. The Leaders Edition looks at the 30 governments that have adopted the Open Data Charter and those that, as G20 members, have committed to G20 Anti-Corruption Open Data Principles.
 
 .footnote[http://opendatabarometer.org/4thedition/report/]
 
@@ -640,7 +639,7 @@ OpenDataBarometer ?
 
 ![](img/odb2.png)
 
-.footnote[[OpenDataBarometer 2017 ranking](https://opendatabarometer.org/?_year=2017&indicator=ODB)]
+.footnote[[OpenDataBarometer 2017 ranking](https://opendatabarometer.org/?_year=2017&amp;indicator=ODB)]
 
 ---
 ## Challenge 2 : data quality
@@ -654,7 +653,7 @@ Sometimes data are well too agregated...
 
 Or hardly exploitable...
 
-.center[<img src="./img/recensement2.png" height="350"/>] 
+.center[&lt;img src="./img/recensement2.png" height="350"/&gt;] 
 
 .footnote[[Source](https://medium.com/datactivist/qui-a-ouvert-quoi-le-recensement-des-donn%C3%A9es-des-villes-est-maintenant-ouvert-b7f697135c1f)]
 
@@ -663,7 +662,7 @@ Or hardly exploitable...
 
 Or hardly exploitable...²
 
-.center[<img src="./img/recensement1.png" height="350"/>] 
+.center[&lt;img src="./img/recensement1.png" height="350"/&gt;] 
 
 
 .footnote[[Source](https://medium.com/datactivist/qui-a-ouvert-quoi-le-recensement-des-donn%C3%A9es-des-villes-est-maintenant-ouvert-b7f697135c1f)]
@@ -672,15 +671,15 @@ Or hardly exploitable...²
 ---
 ## Bonus : Tidy data
 
-.center[<img src="./img/hadley.jpg" height="250"/>] 
+.center[&lt;img src="./img/hadley.jpg" height="250"/&gt;] 
 
 --
 
 [_Tidy data_ Paradigm](http://vita.had.co.nz/papers/tidy-data.pdf) (Hadley Wickham)
 
-> “All happy families are alike, but every unhappy family is unhappy in its own way” – Leon Tolstoï 
+&gt; “All happy families are alike, but every unhappy family is unhappy in its own way” – Leon Tolstoï 
 
-> “Tidy datasets are all alike, but every messy dataset is messy in its own way.” – Hadley Wickham
+&gt; “Tidy datasets are all alike, but every messy dataset is messy in its own way.” – Hadley Wickham
 
 ---
 ## Bonus : Tidy data
@@ -690,7 +689,7 @@ Or hardly exploitable...²
 - Each observation is placed in its own row
 - Each value is placed in its own cell
 
-.center[<img src="./img/tidydata.png" height="200"/>] 
+.center[&lt;img src="./img/tidydata.png" height="200"/&gt;] 
 
 ---
 
@@ -704,35 +703,35 @@ class:inverse, middle, center
 ## Terraces authorization in Paris 
 
 .reduite2[.center[![](img/terrasses.png)]]
-.footnote[[Etalages et terrasses](https://opendata.paris.fr/explore/dataset/etalages-et-terrasses/map/?disjunctive.libelle_type&disjunctive.red_profession&location=18,48.87183,2.30196&basemap=jawg.streets)]
+.footnote[[Etalages et terrasses](https://opendata.paris.fr/explore/dataset/etalages-et-terrasses/map/?disjunctive.libelle_type&amp;disjunctive.red_profession&amp;location=18,48.87183,2.30196&amp;basemap=jawg.streets)]
 
 ---
 
 ## Dansmarue application alerts
 
 .reduite2[.center[![](img/dansmarue.png)]]
-.footnote[[Dansmarue anomalies signalées](https://opendata.paris.fr/explore/dataset/dans-ma-rue/map/?disjunctive.type&disjunctive.soustype&disjunctive.code_postal&disjunctive.ville&disjunctive.arrondissement&disjunctive.prefixe&disjunctive.conseilquartier&location=12,48.8589,2.34729&basemap=jawg.streets)]
+.footnote[[Dansmarue anomalies signalées](https://opendata.paris.fr/explore/dataset/dans-ma-rue/map/?disjunctive.type&amp;disjunctive.soustype&amp;disjunctive.code_postal&amp;disjunctive.ville&amp;disjunctive.arrondissement&amp;disjunctive.prefixe&amp;disjunctive.conseilquartier&amp;location=12,48.8589,2.34729&amp;basemap=jawg.streets)]
 
 ---
 
 ## List of elected rep in Rennes
 
 .reduite2[.center[![](img/rennesod.png)]]
-.footnote[[Base élus de Rennes Ville et Métropole 2019](https://data.rennesmetropole.fr/explore/dataset/lst_agent_elus/table/?disjunctive.nom_agent&disjunctive.prenom_agent&disjunctive.fonction&disjunctive.appartenance)]
+.footnote[[Base élus de Rennes Ville et Métropole 2019](https://data.rennesmetropole.fr/explore/dataset/lst_agent_elus/table/?disjunctive.nom_agent&amp;disjunctive.prenom_agent&amp;disjunctive.fonction&amp;disjunctive.appartenance)]
 
 ---
 
 ## Centre : trains punctuality
 
 .reduite2[.center[![](img/datatrain.png)]]
-.footnote[[Ponctualité trains régionaux](https://data.centrevaldeloire.fr/explore/dataset/agregations-par-mois-ponctualite/table/?disjunctive.lignes&sort=mois_train)]
+.footnote[[Ponctualité trains régionaux](https://data.centrevaldeloire.fr/explore/dataset/agregations-par-mois-ponctualite/table/?disjunctive.lignes&amp;sort=mois_train)]
 
 ---
 
 ## Centre : trains punctuality
 
 .reduite2[.center[![](img/datatrain1.png)]]
-.footnote[[Ponctualité trains régionaux](https://data.centrevaldeloire.fr/explore/dataset/agregations-par-mois-ponctualite/table/?disjunctive.lignes&sort=mois_train)]
+.footnote[[Ponctualité trains régionaux](https://data.centrevaldeloire.fr/explore/dataset/agregations-par-mois-ponctualite/table/?disjunctive.lignes&amp;sort=mois_train)]
 ---
 
 class: inverse, center, middle
@@ -747,7 +746,7 @@ Do you know what PB deals with ?
 
 --
 
-> Participatory budgeting (PB) is a process of democratic deliberation and decision-making, in which ordinary people decide how to allocate part of a municipal or public budget. Participatory budgeting allows citizens to identify, discuss, and prioritize public spending projects, and gives them the power to make real decisions about how money is spent.
+&gt; Participatory budgeting (PB) is a process of democratic deliberation and decision-making, in which ordinary people decide how to allocate part of a municipal or public budget. Participatory budgeting allows citizens to identify, discuss, and prioritize public spending projects, and gives them the power to make real decisions about how money is spent.
 
 Participatory budgeting is mainly a tool for local governements. When associated with a political vision, it may represent a substantial amount of money.
 
@@ -762,7 +761,7 @@ According to you, what is the share of Parisian budget that is dedicated to BP ?
 ## Participatory budgeting
 
 .reduite2[.center[![](img/bpparis.png)]]
-.footnote[[Résultats budget participatif Paris](https://opendata.paris.fr/explore/dataset/bp_projets_gagnants/table/?disjunctive.thematique&disjunctive.direction_pilote_projet&disjunctive.echelle_bp&disjunctive.arrondissement_projet_gagnant&disjunctive.avancement_projet&sort=budget_global_projet_gagnant&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJ0cmVlbWFwIiwiZnVuYyI6IlNVTSIsInlBeGlzIjoiYnVkZ2V0X2dsb2JhbF9wcm9qZXRfZ2FnbmFudCIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6InJhbmdlLWN1c3RvbSJ9XSwieEF4aXMiOiJ0aGVtYXRpcXVlIiwibWF4cG9pbnRzIjoiIiwidGltZXNjYWxlIjoiIiwic29ydCI6IiIsInNlcmllc0JyZWFrZG93biI6IiIsInNlcmllc0JyZWFrZG93blRpbWVzY2FsZSI6IiIsImNvbmZpZyI6eyJkYXRhc2V0IjoiYnBfcHJvamV0c19nYWduYW50cyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUudGhlbWF0aXF1ZSI6dHJ1ZSwiZGlzanVuY3RpdmUuZGlyZWN0aW9uX3BpbG90ZV9wcm9qZXQiOnRydWUsImRpc2p1bmN0aXZlLmVjaGVsbGVfYnAiOnRydWUsImRpc2p1bmN0aXZlLmFycm9uZGlzc2VtZW50X3Byb2pldF9nYWduYW50Ijp0cnVlLCJkaXNqdW5jdGl2ZS5hdmFuY2VtZW50X3Byb2pldCI6dHJ1ZX19fV0sImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWUsInRpbWVzY2FsZSI6IiJ9)]
+.footnote[[Résultats budget participatif Paris](https://opendata.paris.fr/explore/dataset/bp_projets_gagnants/table/?disjunctive.thematique&amp;disjunctive.direction_pilote_projet&amp;disjunctive.echelle_bp&amp;disjunctive.arrondissement_projet_gagnant&amp;disjunctive.avancement_projet&amp;sort=budget_global_projet_gagnant&amp;dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJ0cmVlbWFwIiwiZnVuYyI6IlNVTSIsInlBeGlzIjoiYnVkZ2V0X2dsb2JhbF9wcm9qZXRfZ2FnbmFudCIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6InJhbmdlLWN1c3RvbSJ9XSwieEF4aXMiOiJ0aGVtYXRpcXVlIiwibWF4cG9pbnRzIjoiIiwidGltZXNjYWxlIjoiIiwic29ydCI6IiIsInNlcmllc0JyZWFrZG93biI6IiIsInNlcmllc0JyZWFrZG93blRpbWVzY2FsZSI6IiIsImNvbmZpZyI6eyJkYXRhc2V0IjoiYnBfcHJvamV0c19nYWduYW50cyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUudGhlbWF0aXF1ZSI6dHJ1ZSwiZGlzanVuY3RpdmUuZGlyZWN0aW9uX3BpbG90ZV9wcm9qZXQiOnRydWUsImRpc2p1bmN0aXZlLmVjaGVsbGVfYnAiOnRydWUsImRpc2p1bmN0aXZlLmFycm9uZGlzc2VtZW50X3Byb2pldF9nYWduYW50Ijp0cnVlLCJkaXNqdW5jdGl2ZS5hdmFuY2VtZW50X3Byb2pldCI6dHJ1ZX19fV0sImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWUsInRpbWVzY2FsZSI6IiJ9)]
 
 ---
 
@@ -776,7 +775,7 @@ The **weak representativeness** of people that submit a project and vote : those
 
 The major of Paris was conscious of this issue that's why she decided to **dedicate 1/3rd of total Parisian BP into poor Parisian areas** (mainly districts in the North of Paris) and also to subsidise and organize public workshops to raise awareness among local population living into those poor areas.
 
-.center[<img src= "./img/ogpparis.png" height="250" />]
+.center[&lt;img src= "./img/ogpparis.png" height="250" /&gt;]
 
 ---
 
@@ -785,7 +784,7 @@ The major of Paris was conscious of this issue that's why she decided to **dedic
 More and more local authorities develop their own debate or consultation platforms in order to boost public participation. Through those platforms (website or apps) citizens are able to suggest new ideas or to express their preferences into public policies. In a way, they are encapsulated into the public decision process !
 Example of .red[**idee.paris.fr**] :
 
-.center[<img src= "./img/ideeparis.png" height="300" />]
+.center[&lt;img src= "./img/ideeparis.png" height="300" /&gt;]
 
 ---
 
@@ -799,7 +798,7 @@ In France, one big private actor is **Cap Collectif**. Its platform allows to :
 - Realize a box of ideas or to launch new projects
 - Circulate a petition
 
-.center[<img src= "./img/capco.png" height="250" />]
+.center[&lt;img src= "./img/capco.png" height="250" /&gt;]
 
 ---
 
@@ -807,7 +806,7 @@ In France, one big private actor is **Cap Collectif**. Its platform allows to :
 
 More and more mobile applications are currently developed in order to foster public participation in local governments by collecting the opinions and preferences of local citizens. For instance **Stig** (more tools / initiatives to be presented next session) :
 
-.center[<img src= "./img/stig.png" height="320" />]
+.center[&lt;img src= "./img/stig.png" height="320" /&gt;]
 
 ---
 
@@ -823,11 +822,11 @@ Do you know what citizens budget are about ?
 
 --
 
-> Citizens Budgets are designed to **present key public finance information to a general audience**. They are typically written in accessible language and incorporate visual elements to help non-specialist readers understand the information. 
+&gt; Citizens Budgets are designed to **present key public finance information to a general audience**. They are typically written in accessible language and incorporate visual elements to help non-specialist readers understand the information. 
 
-> Governments should ensure citizens have a firm understanding of the many ways the budget affects their lives. By presenting budget information in a more accessible format than most standard budget documents, **Citizens Budgets foster greater understanding of how public money is being managed.**
+&gt; Governments should ensure citizens have a firm understanding of the many ways the budget affects their lives. By presenting budget information in a more accessible format than most standard budget documents, **Citizens Budgets foster greater understanding of how public money is being managed.**
 
-> Citizens Budgets should be a gateway to more information. They are not meant to replace more detailed budget documents, but they are important for introducing citizens and civil society to **the knowledge they need to participate as informed stakeholders and hold the government accountable for how it manages public money.**
+&gt; Citizens Budgets should be a gateway to more information. They are not meant to replace more detailed budget documents, but they are important for introducing citizens and civil society to **the knowledge they need to participate as informed stakeholders and hold the government accountable for how it manages public money.**
 
 ---
 
@@ -835,7 +834,7 @@ Do you know what citizens budget are about ?
 
 In South Africa (2014)
 
-.center[<img src= "./img/citizensbudget.png" height="370" />]
+.center[&lt;img src= "./img/citizensbudget.png" height="370" /&gt;]
 
 .footnote[[Source](https://www.internationalbudget.org/wp-content/uploads/south-africa-citizens-budget-2014.pdf)]
 
@@ -845,7 +844,7 @@ In South Africa (2014)
 
 In Dominican Republic (2015)
 
-.center[<img src= "./img/citizensbudget1.png" height="370" />]
+.center[&lt;img src= "./img/citizensbudget1.png" height="370" /&gt;]
 
 .footnote[[Source](https://www.internationalbudget.org/wp-content/uploads/dominican-republic-citizens-budget-2015.pdf)]
 
@@ -856,7 +855,7 @@ In Dominican Republic (2015)
 
 In Dominican Republic (2015)
 
-.center[<img src= "./img/citizensbudget2.png" height="370" />]
+.center[&lt;img src= "./img/citizensbudget2.png" height="370" /&gt;]
 
 .footnote[[Source](https://www.internationalbudget.org/wp-content/uploads/dominican-republic-citizens-budget-2015.pdf)]
 
@@ -866,7 +865,7 @@ In Dominican Republic (2015)
 
 The *Grand Débat National* is a public debate launched in early 2019 to let every French express their opinions regarding the ecological transition, fiscality, democracy and public services.
 
-.center[[<img src= "./img/granddebat.png" height="400" />](https://granddebat.fr/)]
+.center[[&lt;img src= "./img/granddebat.png" height="400" /&gt;](https://granddebat.fr/)]
 
 ---
 
@@ -874,7 +873,7 @@ The *Grand Débat National* is a public debate launched in early 2019 to let eve
 
 French citizens could not only express their opinions through an online platform (developed by Cap Collectif) but also through **register of grievances** that could be found in most of local town hall. Moreover thousands of local meetings were hold in many areas, including rural ones that used not to be taken into account by national public policies
 
-.center[[<img src= "./img/granddebat1.png" height="350" />](https://www.gouvernement.fr/le-grand-debat-national)]
+.center[[&lt;img src= "./img/granddebat1.png" height="350" /&gt;](https://www.gouvernement.fr/le-grand-debat-national)]
 
 ---
 
@@ -889,15 +888,15 @@ It has been considered as a popular success and a useful tool to boost civic par
 
 One alternative : la Grande Annotation 
 
-.center[[<img src= "./img/grande_annotation2.png" height="300" />]
+.center[[&lt;img src= "./img/grande_annotation2.png" height="300" /&gt;]
 
 ---
 
 ## Citizens’ Climate Convention
 
-.center[<img src="https://www.conventioncitoyennepourleclimat.fr/wp-content/uploads/2019/09/logo-2.1.png" height="250"/>]
+.center[&lt;img src="https://www.conventioncitoyennepourleclimat.fr/wp-content/uploads/2019/09/logo-2.1.png" height="250"/&gt;]
 
-> The Citizens’ Climate Convention offers a response to two urgent issues:
+&gt; The Citizens’ Climate Convention offers a response to two urgent issues:
 **democracy and the climate** . The ‘Gilet Jaune’ (Yellow vest) movement, climate
 marches, and the ‘Affaire du Siècle’ campaign are all proof of the need to address these two crises at the same time: the climate and democracy will be saved together.
 
@@ -909,7 +908,7 @@ Thierry Pech and Laurence Tubiana, Co-Chairs of the Governance Committee
 
 ## Citizens’ Climate Convention
 
-.center[<img src= "./img/citizensclimate.png" height="430" />]
+.center[&lt;img src= "./img/citizensclimate.png" height="430" /&gt;]
 
 .footnote[[Read CCC guide in English ](https://www.conventioncitoyennepourleclimat.fr/wp-content/uploads/2019/12/CCC-Presentation-EN.pdf)]
 
@@ -918,7 +917,7 @@ Thierry Pech and Laurence Tubiana, Co-Chairs of the Governance Committee
 
 Let's meet at 2pm in "Les halles civiques" to discover the French Civic Tech ecosystem
 
-.center[<img src="https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif" height="400"/>]
+.center[&lt;img src="https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif" height="400"/&gt;]
 
 ---
 class: inverse, center, middle
@@ -926,3 +925,96 @@ class: inverse, center, middle
 # Thank you !
 
 Contact : [timothee.gidoin@datagora.fr](mailto:timothee.gidoin@datagora.fr)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">   <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">   </div> </div> "
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

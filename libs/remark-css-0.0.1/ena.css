@@ -17,10 +17,10 @@ a, a > code {
 /* Couleur de fond et de la typo d'une slide séparatrice */
 .inverse {
   background-color: #b8c8de;
-  color: #FFFFFF;
+  color: #006D6A;
 }
 .inverse h1, .inverse h2, .inverse h3 {
-  color: #FFFFFF;
+  color: #000000;
   line-height: 1.0em;
 }
 /* Two-column layout */
@@ -63,7 +63,7 @@ blockquote {
   padding-left: 1em;
 }
 .red {
-  color: #b8c8de;
+  color: #006D6A;
 }
 
 .title-slide {
@@ -108,7 +108,7 @@ div.my-footer {
 }
 div.my-footer span {
     font-size: 10pt;
-    color: #FFFFFF;
+    color: #000000;
     position: absolute;
     left: 15px;
     bottom: 7px;
@@ -126,6 +126,6 @@ div.my-footer .logo {
   font-size: 10pt;
   margin-bottom: -6px;
   margin-right: 10px;
-  color: #FFFFFF; /* white */
+  color: #006D6A; /* vert foncé */
   opacity: 1; /* default: 0.5 */
 }
