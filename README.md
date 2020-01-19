@@ -4,7 +4,7 @@ This is the repository for both :
 a) the presentation "Open Government" and "Open Data" I realized for the seminar on Innovation in the Public Sector for a South-African delegation from 20 to 24 January 2020.
 This seminar is organized by l'École nationale d'administration.
 
-- Lecture : https://gidoin.github.io/enalocalgov/opengov2020.html
+- Lecture : https://gidoin.github.io/enalocalgov/Opengov2020.html
 
 
 b) the presentation "Open Government" I realized for the Winter School session in December 2019.
