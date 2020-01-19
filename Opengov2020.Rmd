@@ -1,6 +1,6 @@
 ---
 title: "Open Government"
-subtitle: "Winter School 2019"
+subtitle: "Seminar Innovation in the Public Sector "
 author: "Timothée Gidoin"
 date: "`r Sys.Date()`"
 output:
@@ -18,8 +18,8 @@ output:
           </div>
         </div>
 params:
-  event: Winter School 2019 - Session on Open Government
-  slug: opengovernment.html
+  event: Seminar on Innovation in the Public Sector - l'ENA, day 1
+  slug: opengov2020.html
 ---
 
 layout: true
@@ -47,7 +47,7 @@ layout: true
 
 
 `r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='", system.file('rmarkdown', 'templates', 'xaringan', 'resources', 'img', 'accidents.png', package='SlidesDatactivist'), "' width='100px'></center></span></div>")` 
-
+ 
 ---
 ## Before we start
 
@@ -114,20 +114,23 @@ class: inverse, center, middle
 ---
 ## What we will cover together 
 
-.red[**Friday 13/12 (9.15 - 12.30 pm) : Open Government**]
+.red[**9.30 - 10.45 am : Open Government**]
 - **Open Government** : principles and mechanisms
-- 1st pillar : **Transparency** (Open Data)
-
-*Coffee break : 10.45pm*
-
-- 2nd pillar : **Participatory democracy**
-- 3rd pillar : **accountability**
+- How does OGP work and its impact in South Africa
+- The three pillar of OpenGov (Part 1 : Participation & Accountability)
 
 
-.red[**Thursday 19/12 (2 - 5 pm) : French Civic Tech ecosystem**]
-- Visit of "Les halles civiques" and introduction of "Démocratie Ouverte"
-- **Civic & Gov tech** : focus on French & European ecosystems
-- How may Civic & Gov tech foster **public innovation** ?
+*Coffee break : 10.45am*
+
+.red[**11.00 - 12.15 pm : Workshop to identify SA democratic challenges**]
+- Identify key South African public challenges
+- Select one challenge that you can work on back in SA
+
+*Lunch break : 12.15 - 14.00 pm*
+
+.red[**14.00 - 15.15 pm : Open Data, the link between Transparency and Governance**]
+
+- The three pillar of OpenGov (Part 2 : focus on Open Data)
 
 ---
 class: inverse, center, middle
@@ -208,13 +211,13 @@ The **Open Government Partnership** aka OGP
 
 In September 2011, a multilateral partnership has been created so as to promote the Open Gov principles and to translate them into concrete public policies : it's called **Open Government Partnership** (OGP)
 
-Initially founded by 8 countries ( Brazil, Indonesia, Mexico, Norway, Philippines, United Kingdom, the USA, South Africa), now OGP is composed of more than 70 countries, including France
+Initially founded by 8 countries ( Brazil, Indonesia, Mexico, Norway, Philippines, United Kingdom, the USA and... **South Africa** !), now OGP is composed of more than 70 countries, including France
 
 ---
 ## Open Government Partnership
 
-Do you know whether your country is part of OGP ?
---
+Countries that are part of OGP :
+
 [.center[<img src="./img/ogp1.png" height="430"/>]](https://en.wikipedia.org/wiki/Open_Government_Partnership)
 
 ---
@@ -229,7 +232,7 @@ How does OGP work ?
 
 How does OGP work ?
 
-To join OGP, a contry has to be coopted by other civil society actors (for instance NGO such as Amnesty International) that testify the goodwill of the government
+To join OGP, a country has to be coopted by other civil society actors (for instance NGO such as Amnesty International) that testify the goodwill of the government
 
 Once joined, the country has to write, by consulting civil society, a 2-years **national action plan** in which many **commitments** are exposed. Those public commitments have to relate with at least one of the 3 key OGP value : information transparency, public participation, accountability of public action
 
@@ -243,20 +246,26 @@ For instance :
 ---
 ## Open Government Partnership
 
-Example: South Africa National Action Plan (2016-2018)
+.center[<img src="./img/ogp2.png" height="300"/>]
 
-.center[<img src="./img/ogpsa.png" height="350"/>]
+Do you know the 8 commitments of SA National Action Plan (2016-2018) ?
 
 .footnote[[Read South Africa 3rd National Action Plan (2016-2018)](https://www.opengovpartnership.org/wp-content/uploads/2019/06/South-Africa_NAP_2016-2018.docx)]
 
 ---
 ## Open Government Partnership
 
-The 1st and 2nd commitments of SA National Action Plan (2016-2018) :
+Do you know the 8 commitments of SA National Action Plan (2016-2018) ?
 
-.center[<img src="./img/ogpex.png" height="350"/>]
+.center[<img src="./img/ogpsa.png" height="350"/>]
 
 .footnote[[Read South Africa 3rd National Action Plan (2016-2018)](https://www.opengovpartnership.org/wp-content/uploads/2019/06/South-Africa_NAP_2016-2018.docx)]
+
+---
+
+class: inverse, center, middle
+
+## Your turn : go to www.opengovpartnership.org and find South Africa National Action Plan 2016 - 2018
 
 ---
 
@@ -264,15 +273,37 @@ The 1st and 2nd commitments of SA National Action Plan (2016-2018) :
 
 Those commitments are then audited by **independent experts and researchers (.red[IRM])** both on the way they were designed/written and on their state of progress
 
-.center[<img src="./img/ogp3.png" height="280"/>]
+.center[<img src="./img/ogp3.png" height="350"/>]
 
 .footnote[[Read South Africa End-of-Term IRM Report 2016-2018](https://www.opengovpartnership.org/wp-content/uploads/2019/06/South-Africa_NAP_2016-2018.docx)]
 
 ---
 
-class: inverse, center, middle
+## Open Government Partnership
 
-## Your turn : go to www.opengovpartnership.org and find the action plan of your country
+Those commitments are then audited by **independent experts and researchers (.red[IRM])** both on the way they were designed/written and on their state of progress
+
+.center[<img src="./img/ogpsa2.png" height="350"/>]
+
+.footnote[[Read South Africa End-of-Term IRM Report 2016-2018](https://www.opengovpartnership.org/wp-content/uploads/2019/06/South-Africa_NAP_2016-2018.docx)]
+
+## Open Government Partnership
+
+South Africa: Citizens Monitoring Public Budgets..red[Vulekamali] success story,a web portal that houses both national and provincial department budgetary information, budgets and actual expenditures for programs and subprograms within departments. Additionally, the portal equips citizens with learning resources on the budget process and external databases
+
+.center[<img src="./img/vulekemali.png" height="300"/>]
+
+.footnote[[Vulekamali website](https://vulekamali.gov.za/)]
+
+---
+
+## Open Government Partnership
+
+> South Africa’s third action plan contained 8 commitments focused on improving public service delivery, budget transparency and access to government data. 4 of the commitments were completed by the midterm review and a further three showed substantial progress. It should be noted that completion activities were carried out prior to the official start of the action plan period for commitments 6 and 8.
+
+> Under the third action plan, South Africa advanced open budgeting and citizen engagement through the launch of the Vuleka Mali open budget portal; the GovChat engagement application; and the extension of citizen-based monitoring at payment points of the South African Social Security Agency. Following significant changes in government administration, which delayed the finalisation of the self-assessment report and development of the fourth action plan, interim arrangements are in place to put the OGP process back on track.The government has requested additional time to prepare a quality fourth action plan.
+
+.footnote[[Read South Africa End-of-Term IRM Report 2016-2018](https://www.opengovpartnership.org/wp-content/uploads/2019/06/South-Africa_NAP_2016-2018.docx)]
 
 
 ---
@@ -337,7 +368,195 @@ There are currently 20 members in the OGP Local Program.
 
 class: inverse, center, middle
 
-# 1st pillar : transparency
+# 1st OpenGov pillar : participation
+
+---
+
+## Participatory budgeting
+
+Do you know what PB deals with ?
+
+--
+
+> Participatory budgeting (PB) is a process of democratic deliberation and decision-making, in which ordinary people decide how to allocate part of a municipal or public budget. Participatory budgeting allows citizens to identify, discuss, and prioritize public spending projects, and gives them the power to make real decisions about how money is spent.
+
+Participatory budgeting is mainly a tool for local governements. When associated with a political vision, it may represent a substantial amount of money.
+
+According to you, what is the share of Parisian budget that is dedicated to BP ?
+
+--
+
+5% of total budget, that is to say 100 millions euros per year and **500 millions euros over 5 year.**
+
+---
+
+## Participatory budgeting
+
+.reduite2[.center[![](img/bpparis.png)]]
+.footnote[[Résultats budget participatif Paris](https://opendata.paris.fr/explore/dataset/bp_projets_gagnants/table/?disjunctive.thematique&disjunctive.direction_pilote_projet&disjunctive.echelle_bp&disjunctive.arrondissement_projet_gagnant&disjunctive.avancement_projet&sort=budget_global_projet_gagnant&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJ0cmVlbWFwIiwiZnVuYyI6IlNVTSIsInlBeGlzIjoiYnVkZ2V0X2dsb2JhbF9wcm9qZXRfZ2FnbmFudCIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6InJhbmdlLWN1c3RvbSJ9XSwieEF4aXMiOiJ0aGVtYXRpcXVlIiwibWF4cG9pbnRzIjoiIiwidGltZXNjYWxlIjoiIiwic29ydCI6IiIsInNlcmllc0JyZWFrZG93biI6IiIsInNlcmllc0JyZWFrZG93blRpbWVzY2FsZSI6IiIsImNvbmZpZyI6eyJkYXRhc2V0IjoiYnBfcHJvamV0c19nYWduYW50cyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUudGhlbWF0aXF1ZSI6dHJ1ZSwiZGlzanVuY3RpdmUuZGlyZWN0aW9uX3BpbG90ZV9wcm9qZXQiOnRydWUsImRpc2p1bmN0aXZlLmVjaGVsbGVfYnAiOnRydWUsImRpc2p1bmN0aXZlLmFycm9uZGlzc2VtZW50X3Byb2pldF9nYWduYW50Ijp0cnVlLCJkaXNqdW5jdGl2ZS5hdmFuY2VtZW50X3Byb2pldCI6dHJ1ZX19fV0sImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWUsInRpbWVzY2FsZSI6IiJ9)]
+
+---
+
+## Participatory budgeting
+
+According to you, what may be the limits of PB ?
+
+--
+
+The **weak representativeness** of people that submit a project and vote : those people are often better educated and wealthier than the average.
+
+The major of Paris was conscious of this issue that's why she decided to **dedicate 1/3rd of total Parisian BP into poor Parisian areas** (mainly districts in the North of Paris) and also to subsidise and organize public workshops to raise awareness among local population living into those poor areas.
+
+.center[<img src= "./img/ogpparis.png" height="250" />]
+
+---
+
+## Consultation platforms
+
+More and more local authorities develop their own debate or consultation platforms in order to boost public participation. Through those platforms (website or apps) citizens are able to suggest new ideas or to express their preferences into public policies. In a way, they are encapsulated into the public decision process !
+Example of .red[**idee.paris.fr**] :
+
+.center[<img src= "./img/ideeparis.png" height="300" />]
+
+---
+
+## Consultation platforms
+
+In France, one big private actor is **Cap Collectif**. Its platform allows to :
+
+- Realize consultations
+- Realize BP
+- Realize and send forms to citizens
+- Realize a box of ideas or to launch new projects
+- Circulate a petition
+
+.center[<img src= "./img/capco.png" height="250" />]
+
+---
+
+## Consultation platforms
+
+More and more mobile applications are currently developed in order to foster public participation in local governments by collecting the opinions and preferences of local citizens. For instance **Stig** (more tools / initiatives to be presented next session) :
+
+.center[<img src= "./img/stig.png" height="320" />]
+
+---
+
+class: inverse, center, middle
+
+# 2nd OpenGov pillar : accountability
+
+---
+
+## Citizens Budgets
+
+Do you know what citizens budget are about ?
+
+--
+
+> Citizens Budgets are designed to **present key public finance information to a general audience**. They are typically written in accessible language and incorporate visual elements to help non-specialist readers understand the information. 
+
+> Governments should ensure citizens have a firm understanding of the many ways the budget affects their lives. By presenting budget information in a more accessible format than most standard budget documents, **Citizens Budgets foster greater understanding of how public money is being managed.**
+
+> Citizens Budgets should be a gateway to more information. They are not meant to replace more detailed budget documents, but they are important for introducing citizens and civil society to **the knowledge they need to participate as informed stakeholders and hold the government accountable for how it manages public money.**
+
+---
+
+## Citizens Budgets
+
+In South Africa (2014)
+
+.center[<img src= "./img/citizensbudget.png" height="370" />]
+
+.footnote[[Source](https://www.internationalbudget.org/wp-content/uploads/south-africa-citizens-budget-2014.pdf)]
+
+---
+
+## Citizens Budgets
+
+In Dominican Republic (2015)
+
+.center[<img src= "./img/citizensbudget1.png" height="370" />]
+
+.footnote[[Source](https://www.internationalbudget.org/wp-content/uploads/dominican-republic-citizens-budget-2015.pdf)]
+
+
+---
+
+## Citizens Budgets
+
+In Dominican Republic (2015)
+
+.center[<img src= "./img/citizensbudget2.png" height="370" />]
+
+.footnote[[Source](https://www.internationalbudget.org/wp-content/uploads/dominican-republic-citizens-budget-2015.pdf)]
+
+---
+
+## Grand Débat National
+
+The *Grand Débat National* is a public debate launched in early 2019 to let every French express their opinions regarding the ecological transition, fiscality, democracy and public services.
+
+.center[[<img src= "./img/granddebat.png" height="400" />](https://granddebat.fr/)]
+
+---
+
+## Grand Débat National
+
+French citizens could not only express their opinions through an online platform (developed by Cap Collectif) but also through **register of grievances** that could be found in most of local town hall. Moreover thousands of local meetings were hold in many areas, including rural ones that used not to be taken into account by national public policies
+
+.center[[<img src= "./img/granddebat1.png" height="350" />](https://www.gouvernement.fr/le-grand-debat-national)]
+
+---
+
+## Grand Débat National
+
+It has been considered as a popular success and a useful tool to boost civic participation into local (and national ?) policy-making. However, the initiative also face strong critics, do you know why ?
+
+--
+
+- Not a transparent platform
+- Biased topics and questions ?
+
+One alternative : la Grande Annotation 
+
+[<img src= "./img/grande_annotation2.png" height="300" />]
+
+---
+
+## Citizens’ Climate Convention
+
+.center[<img src="https://www.conventioncitoyennepourleclimat.fr/wp-content/uploads/2019/09/logo-2.1.png" height="250"/>]
+
+> The Citizens’ Climate Convention offers a response to two urgent issues:
+**democracy and the climate** . The ‘Gilet Jaune’ (Yellow vest) movement, climate
+marches, and the ‘Affaire du Siècle’ campaign are all proof of the need to address these two crises at the same time: the climate and democracy will be saved together.
+
+Thierry Pech and Laurence Tubiana, Co-Chairs of the Governance Committee
+
+.footnote[[Read CCC guide in English ](https://www.conventioncitoyennepourleclimat.fr/wp-content/uploads/2019/12/CCC-Presentation-EN.pdf)]
+
+---
+
+## Citizens’ Climate Convention
+
+.center[<img src= "./img/citizensclimate.png" height="430" />]
+
+.footnote[[Read CCC guide in English ](https://www.conventioncitoyennepourleclimat.fr/wp-content/uploads/2019/12/CCC-Presentation-EN.pdf)]
+
+---
+
+class: inverse, center, middle
+
+# Coffee Break !
+
+.center[<img src="https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif" height="400"/>]
+
+---
+
+class: inverse, center, middle
+
+# 3rd pillar : transparency
 
 ---
 ## Open data : definition
@@ -733,192 +952,7 @@ class:inverse, middle, center
 
 .reduite2[.center[![](img/datatrain1.png)]]
 .footnote[[Ponctualité trains régionaux](https://data.centrevaldeloire.fr/explore/dataset/agregations-par-mois-ponctualite/table/?disjunctive.lignes&sort=mois_train)]
----
 
-class: inverse, center, middle
-
-# 2nd pillar : participation
-
----
-
-## Participatory budgeting
-
-Do you know what PB deals with ?
-
---
-
-> Participatory budgeting (PB) is a process of democratic deliberation and decision-making, in which ordinary people decide how to allocate part of a municipal or public budget. Participatory budgeting allows citizens to identify, discuss, and prioritize public spending projects, and gives them the power to make real decisions about how money is spent.
-
-Participatory budgeting is mainly a tool for local governements. When associated with a political vision, it may represent a substantial amount of money.
-
-According to you, what is the share of Parisian budget that is dedicated to BP ?
-
---
-
-5% of total budget, that is to say 100 millions euros per year and **500 millions euros over 5 year.**
-
----
-
-## Participatory budgeting
-
-.reduite2[.center[![](img/bpparis.png)]]
-.footnote[[Résultats budget participatif Paris](https://opendata.paris.fr/explore/dataset/bp_projets_gagnants/table/?disjunctive.thematique&disjunctive.direction_pilote_projet&disjunctive.echelle_bp&disjunctive.arrondissement_projet_gagnant&disjunctive.avancement_projet&sort=budget_global_projet_gagnant&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJ0cmVlbWFwIiwiZnVuYyI6IlNVTSIsInlBeGlzIjoiYnVkZ2V0X2dsb2JhbF9wcm9qZXRfZ2FnbmFudCIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6InJhbmdlLWN1c3RvbSJ9XSwieEF4aXMiOiJ0aGVtYXRpcXVlIiwibWF4cG9pbnRzIjoiIiwidGltZXNjYWxlIjoiIiwic29ydCI6IiIsInNlcmllc0JyZWFrZG93biI6IiIsInNlcmllc0JyZWFrZG93blRpbWVzY2FsZSI6IiIsImNvbmZpZyI6eyJkYXRhc2V0IjoiYnBfcHJvamV0c19nYWduYW50cyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUudGhlbWF0aXF1ZSI6dHJ1ZSwiZGlzanVuY3RpdmUuZGlyZWN0aW9uX3BpbG90ZV9wcm9qZXQiOnRydWUsImRpc2p1bmN0aXZlLmVjaGVsbGVfYnAiOnRydWUsImRpc2p1bmN0aXZlLmFycm9uZGlzc2VtZW50X3Byb2pldF9nYWduYW50Ijp0cnVlLCJkaXNqdW5jdGl2ZS5hdmFuY2VtZW50X3Byb2pldCI6dHJ1ZX19fV0sImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWUsInRpbWVzY2FsZSI6IiJ9)]
-
----
-
-## Participatory budgeting
-
-According to you, what may be the limits of PB ?
-
---
-
-The **weak representativeness** of people that submit a project and vote : those people are often better educated and wealthier than the average.
-
-The major of Paris was conscious of this issue that's why she decided to **dedicate 1/3rd of total Parisian BP into poor Parisian areas** (mainly districts in the North of Paris) and also to subsidise and organize public workshops to raise awareness among local population living into those poor areas.
-
-.center[<img src= "./img/ogpparis.png" height="250" />]
-
----
-
-## Consultation platforms
-
-More and more local authorities develop their own debate or consultation platforms in order to boost public participation. Through those platforms (website or apps) citizens are able to suggest new ideas or to express their preferences into public policies. In a way, they are encapsulated into the public decision process !
-Example of .red[**idee.paris.fr**] :
-
-.center[<img src= "./img/ideeparis.png" height="300" />]
-
----
-
-## Consultation platforms
-
-In France, one big private actor is **Cap Collectif**. Its platform allows to :
-
-- Realize consultations
-- Realize BP
-- Realize and send forms to citizens
-- Realize a box of ideas or to launch new projects
-- Circulate a petition
-
-.center[<img src= "./img/capco.png" height="250" />]
-
----
-
-## Consultation platforms
-
-More and more mobile applications are currently developed in order to foster public participation in local governments by collecting the opinions and preferences of local citizens. For instance **Stig** (more tools / initiatives to be presented next session) :
-
-.center[<img src= "./img/stig.png" height="320" />]
-
----
-
-class: inverse, center, middle
-
-# 3rd pillar : accountability
-
----
-
-## Citizens Budgets
-
-Do you know what citizens budget are about ?
-
---
-
-> Citizens Budgets are designed to **present key public finance information to a general audience**. They are typically written in accessible language and incorporate visual elements to help non-specialist readers understand the information. 
-
-> Governments should ensure citizens have a firm understanding of the many ways the budget affects their lives. By presenting budget information in a more accessible format than most standard budget documents, **Citizens Budgets foster greater understanding of how public money is being managed.**
-
-> Citizens Budgets should be a gateway to more information. They are not meant to replace more detailed budget documents, but they are important for introducing citizens and civil society to **the knowledge they need to participate as informed stakeholders and hold the government accountable for how it manages public money.**
-
----
-
-## Citizens Budgets
-
-In South Africa (2014)
-
-.center[<img src= "./img/citizensbudget.png" height="370" />]
-
-.footnote[[Source](https://www.internationalbudget.org/wp-content/uploads/south-africa-citizens-budget-2014.pdf)]
-
----
-
-## Citizens Budgets
-
-In Dominican Republic (2015)
-
-.center[<img src= "./img/citizensbudget1.png" height="370" />]
-
-.footnote[[Source](https://www.internationalbudget.org/wp-content/uploads/dominican-republic-citizens-budget-2015.pdf)]
-
-
----
-
-## Citizens Budgets
-
-In Dominican Republic (2015)
-
-.center[<img src= "./img/citizensbudget2.png" height="370" />]
-
-.footnote[[Source](https://www.internationalbudget.org/wp-content/uploads/dominican-republic-citizens-budget-2015.pdf)]
-
----
-
-## Grand Débat National
-
-The *Grand Débat National* is a public debate launched in early 2019 to let every French express their opinions regarding the ecological transition, fiscality, democracy and public services.
-
-.center[[<img src= "./img/granddebat.png" height="400" />](https://granddebat.fr/)]
-
----
-
-## Grand Débat National
-
-French citizens could not only express their opinions through an online platform (developed by Cap Collectif) but also through **register of grievances** that could be found in most of local town hall. Moreover thousands of local meetings were hold in many areas, including rural ones that used not to be taken into account by national public policies
-
-.center[[<img src= "./img/granddebat1.png" height="350" />](https://www.gouvernement.fr/le-grand-debat-national)]
-
----
-
-## Grand Débat National
-
-It has been considered as a popular success and a useful tool to boost civic participation into local (and national ?) policy-making. However, the initiative also face strong critics, do you know why ?
-
---
-
-- Not a transparent platform
-- Biased topics and questions ?
-
-One alternative : la Grande Annotation 
-
-.center[[<img src= "./img/grande_annotation2.png" height="300" />]
-
----
-
-## Citizens’ Climate Convention
-
-.center[<img src="https://www.conventioncitoyennepourleclimat.fr/wp-content/uploads/2019/09/logo-2.1.png" height="250"/>]
-
-> The Citizens’ Climate Convention offers a response to two urgent issues:
-**democracy and the climate** . The ‘Gilet Jaune’ (Yellow vest) movement, climate
-marches, and the ‘Affaire du Siècle’ campaign are all proof of the need to address these two crises at the same time: the climate and democracy will be saved together.
-
-Thierry Pech and Laurence Tubiana, Co-Chairs of the Governance Committee
-
-.footnote[[Read CCC guide in English ](https://www.conventioncitoyennepourleclimat.fr/wp-content/uploads/2019/12/CCC-Presentation-EN.pdf)]
-
----
-
-## Citizens’ Climate Convention
-
-.center[<img src= "./img/citizensclimate.png" height="430" />]
-
-.footnote[[Read CCC guide in English ](https://www.conventioncitoyennepourleclimat.fr/wp-content/uploads/2019/12/CCC-Presentation-EN.pdf)]
-
----
-## See you next Thursday !
-
-Let's meet at 2pm in "Les halles civiques" to discover the French Civic Tech ecosystem
-
-.center[<img src="https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif" height="400"/>]
 
 ---
 class: inverse, center, middle
