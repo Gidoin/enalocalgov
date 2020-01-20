@@ -287,6 +287,7 @@ Those commitments are then audited by **independent experts and researchers (.re
 
 .footnote[[Read South Africa End-of-Term IRM Report 2016-2018](https://www.opengovpartnership.org/wp-content/uploads/2019/06/South-Africa_NAP_2016-2018.docx)]
 
+---
 ## Open Government Partnership
 
 South Africa: Citizens Monitoring Public Budgets..red[Vulekamali] success story,a web portal that houses both national and provincial department budgetary information, budgets and actual expenditures for programs and subprograms within departments. Additionally, the portal equips citizens with learning resources on the budget process and external databases
