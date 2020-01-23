@@ -5,7 +5,7 @@ author: "Timothée Gidoin, July 2019"
 date: ""
 output:
   SlidesDatactivist::moon_reader:
-    css: [default, datactivist, datactivist-fonts]
+    css: [default, ena, sciencespo-fonts]
     lib_dir: libs
     nature:
       highlightStyle: github
